@@ -24,7 +24,7 @@ Various Parts:
   -  [RequireJS](http://requirejs.org/): AMD loader optimized for the browser
 
 ## Getting Started
-  #  You need to have `npm` installed (it comes with [node](http://nodejs.org/))
-  #  Clone this repository: `git clone git@github.com:impressiver/Grunt-AMD-Boilerplate.git && cd Grunt-AMD-Boilerplate`
-  #  Install dependencies: `npm install`
-  #  ...
+  1.  You need to have `npm` installed (it comes with [node](http://nodejs.org/))
+  1.  Clone this repository: `git clone git@github.com:impressiver/Grunt-AMD-Boilerplate.git && cd Grunt-AMD-Boilerplate`
+  1.  Install dependencies: `npm install`
+  1.  ...
