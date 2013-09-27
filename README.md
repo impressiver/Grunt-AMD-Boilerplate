@@ -17,7 +17,7 @@ codebase and then compile everything down to a single javascript file when you
 are ready to publish.
 
 Various Parts:
-  -  [Grunt](http://gruntjs.com/:     Automates common tasks: test, build, clean
+  -  [Grunt](http://gruntjs.com/):     Automates common tasks: test, build, clean
   -  [Jasmine](http://pivotal.github.io/jasmine/):   Behavior-driven test framework
   -  [Karma](http://karma-runner.github.io/):     Javascript test runner
   -  [PhantomJS](http://phantomjs.org/): Headless browser for running tests
