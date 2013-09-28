@@ -40,9 +40,12 @@ define("console", (function (global) {
     };
 }(this)));
 
-define('mymodule',['console'],
-function (console) {
+
+
+define('mymodule',['require','console'],function (require) {
   
+
+  var console = require('console');
 
   console.log('Loading MyModule...');
 
