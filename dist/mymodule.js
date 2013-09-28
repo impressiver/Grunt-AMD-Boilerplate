@@ -1,4 +1,4 @@
-/*! MyModule - v0.1.0 - 2013-09-27
+/*! MyModule - v0.0.0 - 2013-09-28
 
 Grunt-AMD-Boilerplate-Module
 ============================

@@ -9,17 +9,17 @@ module.exports = function(grunt) {
 
   var pkg = grunt.file.readJSON('package.json'),
       config = {
-        modulename: (process.env.npm_package_config_distname || pkg.config.distname || pkg.name).replace(/[^a-z0-9_\-]/ig, '_')
+        moduleName: (process.env.npm_package_config_moduleName || pkg.config.moduleName || pkg.name).replace(/[^a-z0-9_\-]/ig, '_')
       };
 
-  config.distname = config.modulename.toLowerCase();
+  config.distName = config.moduleName.toLowerCase();
 
   // Project configuration.
   grunt.initConfig({
     // Metadata.
     pkg: pkg,
     config: config,
-    banner: '/*! <%= config.modulename %> - v<%= pkg.version %> - ' +
+    banner: '/*! <%= config.moduleName %> - v<%= pkg.version %> - ' +
       '<%= grunt.template.today("yyyy-mm-dd") %>\n\n' +
       '<%= pkg.name %>\n' + (new Array(pkg.name.length + 1).join('=')) + '\n' +
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
@@ -36,8 +36,8 @@ module.exports = function(grunt) {
         stripBanners: false
       },
       dist: {
-        src: ['dist/<%= config.distname %>.js'],
-        dest: 'dist/<%= config.distname %>.js'
+        src: ['dist/<%= config.distName %>.js'],
+        dest: 'dist/<%= config.distName %>.js'
       },
     },
     uglify: {
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: '<%= concat.dist.dest %>',
-        dest: 'dist/<%= config.distname %>.min.js'
+        dest: 'dist/<%= config.distName %>.min.js'
       },
     },
     karma: {
@@ -77,8 +77,8 @@ module.exports = function(grunt) {
       },
       main: {
         files: [{
-          src: ['dist/<%= config.distname %>.js'],
-          dest: './<%= config.distname %>.js'
+          src: ['dist/<%= config.distName %>.js'],
+          dest: './<%= config.distName %>.js'
         }]
       }
     },
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
         options: {
           name: 'main',
           mainConfigFile: 'src/main.js',
-          out: 'dist/<%= config.distname %>.js',
+          out: 'dist/<%= config.distName %>.js',
           optimize: 'none'
           // generateSourceMaps: true,
         }
@@ -122,7 +122,7 @@ module.exports = function(grunt) {
     'copy:main'
   ]);
 
-  // Default task.
+  // Default task
   grunt.registerTask('default', [
     'test',
     'build'
