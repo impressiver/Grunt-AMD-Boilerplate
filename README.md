@@ -21,7 +21,7 @@ Bits and Pieces:
   -  [Yeoman](http://yeoman.io):                    Tools that make generating things like this
   -  [Grunt](http://gruntjs.com/):                  Automates common tasks: test, build, clean
   -  [Bower](http://bower.io/):                     Package manager for browser dependencies
-  -  [Jasmine](http://pivotal.github.io/jasmine/):  Behavior-driven test framework
+  -  [Jasmine](https://jasmine.github.io/):         Behavior-driven test framework
   -  [Karma](http://karma-runner.github.io/):       Javascript test runner
   -  [PhantomJS](http://phantomjs.org/):            Headless browser for running tests
   -  [RequireJS](http://requirejs.org/):            AMD loader optimized for the browser
